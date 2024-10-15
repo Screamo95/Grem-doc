@@ -1,0 +1,10 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --regular: Stapel-regular;
+  --medium: Stapel-medium;
+  --bold: Stapel-bold;
+}

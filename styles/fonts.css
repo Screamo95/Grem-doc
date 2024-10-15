@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Stapel-regular;
+  src: url(../fonts/Stapel_Regular.woff);
+}
+@font-face {
+  font-family: Stapel-medium;
+  src: url(../fonts/Stapel-Medium.woff);
+}
+@font-face {
+  font-family: Stapel-bold;
+  src: url(../fonts/Stapel-Bold.woff);
+}
