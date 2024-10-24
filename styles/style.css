@@ -16,6 +16,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 10;
 }
 .header__top {
   display: flex;
@@ -295,5 +297,201 @@
   .header__bottom-whatsapp img {
     width: 49px;
     height: 49px;
+  }
+}
+
+/* Product */
+.product {
+  background: #686868;
+  padding-top: 96px;
+  padding-bottom: 132px;
+  position: relative;
+  overflow: hidden;
+}
+.product .swiper {
+  display: none;
+}
+.product__container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.product-absolut {
+  position: absolute;
+  top: -549px;
+  right: -230px;
+  z-index: 1;
+}
+.product-title {
+  font-family: var(--bold);
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 26px;
+}
+.product-subtitle {
+  font-family: var(--regular);
+  font-size: 16px;
+  line-height: 160%;
+  color: #d2d2d2;
+  max-width: 486px;
+  margin-bottom: 48px;
+}
+.product__body {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 40px;
+}
+.product__item {
+  background-image: url(../img/product-item-bg.png);
+  padding-left: 29px;
+  padding-bottom: 35px;
+  background-repeat: no-repeat;
+  max-width: 360px;
+  height: 413px;
+}
+.product__item-inner {
+  display: flex;
+  justify-content: center;
+}
+.product__item-img {
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+.product__item:nth-child(3) .product__item-img {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.product__item:nth-child(4) .product__item-img {
+  margin-bottom: 19px;
+  margin-top: 19px;
+}
+.product__item:nth-child(5) .product__item-img {
+  margin-bottom: 23px;
+  margin-top: 23px;
+}
+.product__item:nth-child(6) .product__item-img {
+  margin-bottom: 18px;
+  margin-top: 36px;
+}
+.product__item:nth-child(7) .product__item-img {
+  margin-bottom: 14px;
+  margin-top: 30px;
+}
+.product__item:nth-child(8) .product__item-img {
+  margin-bottom: 19px;
+  margin-top: 27px;
+}
+.product__item-name {
+  font-family: var(--regular);
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 11px;
+}
+.product__item:nth-child(3) .product__item-name {
+  font-size: 22px;
+}
+.product__item-txt {
+  font-family: var(--regular);
+  font-size: 16px;
+  line-height: 160%;
+  color: #d2d2d2;
+  margin-bottom: 41px;
+  margin-right: 35px;
+}
+.product__item-txt_big {
+  margin-bottom: 13px;
+}
+.product__item-btn {
+  border-radius: 2px;
+  width: 200px;
+  height: 46px;
+  background: #0e9e2f;
+  font-family: var(--medium);
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Product slider */
+.product .swiper {
+  width: 360px;
+  height: 538px;
+  padding-top: 125px;
+}
+.product .swiper-button-prev, .product .swiper-button-next {
+  width: 54px;
+  height: 54px;
+  margin-top: -254px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product .swiper-button-prev {
+  border: 1px solid #fff;
+  margin-left: 200px;
+}
+.product .swiper-button-next {
+  background-image: url(../img/product-swiper-border-right.svg);
+  margin-right: 21px;
+}
+.product .swiper-button-prev::after {
+  content: none;
+}
+.product .swiper-button-next::after {
+  content: none;
+}
+.product .swiper-slide:nth-child(3) .product__item-name {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1200px) {
+  .product__body {
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center;
+  }
+  .product__container {
+    max-width: 760px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .product__body {
+    display: none;
+  }
+  .product .swiper {
+    display: block;
+  }
+  .product-title {
+    font-size: 36px;
+    margin-left: 38px;
+  }
+  .product-subtitle {
+    font-size: 16px;
+    margin-right: 38px;
+    margin-left: 38px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .product {
+    padding-top: 102px;
+    padding-bottom: 124px;
+  }
+  .product-absolut {
+    top: -485px;
+    right: -467px;
+  }
+  .product-title {
+    font-size: 28px;
+    max-width: 300px;
+    margin-bottom: 17px;
+  }
+  .product-subtitle {
+    font-size: 15px;
+    max-width: 300px;
+    margin-bottom: 4px;
   }
 }

@@ -25,3 +25,11 @@ linkBurger.onclick = function() {
   openBurger.classList.remove(`burger__start`)
   closeBurger.classList.add(`burger__start`)
 }
+
+// Product swiper
+const product_swiper = new Swiper('.product .swiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
