@@ -300,7 +300,7 @@
   }
 }
 
-/* Product */
+/* Продукция завода */
 .product {
   background: #686868;
   padding-top: 96px;
@@ -495,3 +495,143 @@
     margin-bottom: 4px;
   }
 }
+
+/* Основная деятельность */
+.job {
+  background-color: #fff;
+  padding-top: 135px;
+}
+.job__container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.job__container_mobile {
+  display: none;
+}
+.job-title {
+  font-family: var(--bold);
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #494b44;
+  margin-bottom: 74px;
+}
+.job__box {
+  display: grid;
+  grid-template-columns: 361px 361px 361px;
+  grid-template-rows: 384px 186px;
+  column-gap: 39px;
+  row-gap: 30px;
+  margin-bottom: 135px;
+}
+.job__box_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.job__box_content-name {
+  font-family: var(--medium);
+  font-size: 30px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #0e9e2f;
+  margin-bottom: 35px;
+}
+.job__box_content-txt {
+  font-family: var(--regular);
+  font-size: 16px;
+  line-height: 160%;
+  color: #92938f;
+}
+.job__box_big {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.job__box_small {
+}
+
+@media screen and (max-width: 500px) {
+  .job__container {
+    display: none;
+  }
+  .job__container_mobile {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .job {
+    padding-top: 75px;
+  }
+  .job__box {
+    display: block;
+    margin-bottom: 80px;
+  }
+  .job-title {
+    font-size: 28px;
+    margin-bottom: 45px;
+  }
+  .job__btn {
+    border-radius: 2px 0 0 2px;
+    width: 300px;
+    height: 50px;
+    background: #0e9e2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+  .job__btn-txt {
+    font-family: var(--medium);
+    font-size: 16px;
+    color: #fff;
+  }
+  .job__btn-arrow {
+  }
+  .job__box_small {
+    width: 300px;
+    height: 148px;
+    margin-bottom: 17px;
+  }
+  .job__box_content-name {
+    font-family: var(--medium);
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #494b44;
+    margin-bottom: 13px;
+    margin-top: 5px;
+  }
+  .job__box_content-txt {
+    font-family: var(--regular);
+    font-size: 15px;
+    line-height: 160%;
+    color: #92938f;
+    margin-bottom: 0;
+  }
+  .job__select {
+    border-radius: 2px 0 0 2px;
+    background: #0e9e2f;
+    padding: 15px 0 10px 12px;
+    margin-bottom: 20px;
+    margin-top: -49px;
+  }
+  .job__select-link {
+    font-family: var(--medium);
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .job__box_close {
+    display: none;
+  }
+  .job__select_close {
+    display: none;
+  }
+} 
+
+/* Адаптировать блок job все экраны кроме макета PC и макета mobile */
