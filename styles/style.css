@@ -551,7 +551,26 @@
 .job__box_small {
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
+  .job__box {
+    grid-template-columns: 361px 361px;
+    grid-template-rows: 220px 186px 186px;
+    margin-bottom: 70px;
+    justify-content: center;
+  }
+  .job__box_big {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 361px;
+    height: 186px;
+  }
+  .job__box_content {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
   .job__container {
     display: none;
   }
@@ -632,6 +651,4 @@
   .job__select_close {
     display: none;
   }
-} 
-
-/* Адаптировать блок job все экраны кроме макета PC и макета mobile */
+}
