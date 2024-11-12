@@ -878,6 +878,9 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .map {
+    padding-bottom: 484px;
+  }
   .map__top {
     padding-right: 0px;
     flex-direction: column;
@@ -929,5 +932,51 @@
   .map__top {
     padding-left: 38px;
     align-items: start;
+  }
+}
+
+/* Сотрудничество */
+.cooperation {
+  padding-top: 89px;
+  padding-bottom: 70px;
+  margin-top: -5px;
+  background-image: url(../img/cooperation-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.cooperation-title {
+  font-family: var(--bold);
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.cooperation-subtitle {
+  font-family: var(--regular);
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #fff;
+  max-width: 450px;
+  margin: 0 auto 42px;
+}
+.cooperation-btn {
+  border-radius: 2px;
+  width: 179px;
+  height: 50px;
+  background: #0e9e2f;
+  font-family: var(--medium);
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .cooperation {
+    display: none;
   }
 }
