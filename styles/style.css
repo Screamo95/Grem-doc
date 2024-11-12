@@ -655,7 +655,7 @@
 
 /* Стабильные поставки за счет собственной лесозаготовки */
 .delivery {
-  padding-bottom: 137px;
+  padding-bottom: 83px;
 }
 .delivery__box {
   width: 1160px;
@@ -806,5 +806,128 @@
   }
   .delivery__item-txt {
     font-size: 15px;
+  }
+}
+
+/* География поставок */
+.map {
+  padding-bottom: 84px;
+}
+.map__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.map__top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 16px;
+  margin-bottom: 15px;
+}
+.map__top-title {
+  font-family: var(--bold);
+  font-size: 40px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #494b44;
+  margin-top: 5px;
+}
+.map__inner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.map__inner-txt {
+  font-family: var(--regular);
+  font-size: 16px;
+  line-height: 160%;
+  color: #92938f;
+  max-width: 250px;
+}
+.map__icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.map__item {
+  display: flex;
+  gap: 2px;
+  align-items: end;
+}
+.map__item-line {
+}
+.map__item-icon {
+}
+.map__item-line_mobile {
+  display: none;
+}
+.map__item-icon_mobile {
+  display: none;
+}
+.map-icon {
+}
+
+@media screen and (max-width: 1200px) {
+  .map__top {
+    padding-left: 16px;
+    gap: 15px;
+  }
+  .map-icon {
+    width: 800px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .map__top {
+    padding-right: 0px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -38px;
+    gap: 12px;
+  }
+  .map__container {
+    position: relative;
+  }
+  .map__item-line {
+    display: none;
+  }
+  .map__item-icon {
+    display: none;
+  }
+  .map__item-line_mobile {
+    display: block;
+  }
+  .map__item-icon_mobile {
+    display: block;
+  }
+  .map__icon {
+    gap: 10px;
+  }
+  .map__item {
+    gap: 0px;
+  }
+  .map__inner {
+    gap: 2px;
+    align-items: start;
+  }
+  .map__top-title {
+    font-size: 28px;
+  }
+  .map__inner-txt {
+    font-size: 15px;
+    max-width: 170px;
+    padding-top: 5px;
+  }
+  .map-icon {
+    width: 700px;
+    position: absolute;
+    top: 195px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .map__top {
+    padding-left: 38px;
+    align-items: start;
   }
 }
