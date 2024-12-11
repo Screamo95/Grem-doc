@@ -63,3 +63,57 @@ document.querySelector(`.job__select-link_3`).onclick = function() {
   document.querySelector(`.job__box_1`).classList.add(`job__box_close`)
   document.querySelector(`.job__box_2`).classList.add(`job__box_close`)
 }
+
+// Актуальные вакансии слайдер вакансии
+
+let vacancy_swiper = new Swiper(".vacancy__swiper", {
+  slidesPerView: 1.04,
+  spaceBetween: 10,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  initialSlide: 0,
+  breakpoints: {
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          initialSlide: 0,
+        },
+        900: {
+          slidesPerView: 3.1,
+          spaceBetween: 30,
+          initialSlide: 1,
+        },
+        1200: {
+          slidesPerView: 3.6,
+          spaceBetween: 40,
+          initialSlide: 1,
+        },
+      }
+});
+
+// // const swiper = new Swiper('.swiper', {
+//   // Default parameters
+//   slidesPerView: 1,
+//   spaceBetween: 10,
+//   // Responsive breakpoints
+//   breakpoints: {
+//     // when window width is >= 320px
+//     320: {
+//       slidesPerView: 2,
+//       spaceBetween: 20
+//     },
+//     // when window width is >= 480px
+//     480: {
+//       slidesPerView: 3,
+//       spaceBetween: 30
+//     },
+//     // when window width is >= 640px
+//     640: {
+//       slidesPerView: 4,
+//       spaceBetween: 40
+//     }
+//   }
+// })
