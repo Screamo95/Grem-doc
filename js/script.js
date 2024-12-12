@@ -64,7 +64,7 @@ document.querySelector(`.job__select-link_3`).onclick = function() {
   document.querySelector(`.job__box_2`).classList.add(`job__box_close`)
 }
 
-// Актуальные вакансии слайдер вакансии
+// Актуальные вакансии слайдер
 
 let vacancy_swiper = new Swiper(".vacancy__swiper", {
   slidesPerView: 1.04,
@@ -94,26 +94,6 @@ let vacancy_swiper = new Swiper(".vacancy__swiper", {
       }
 });
 
-// // const swiper = new Swiper('.swiper', {
-//   // Default parameters
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   // Responsive breakpoints
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     // when window width is >= 480px
-//     480: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     // when window width is >= 640px
-//     640: {
-//       slidesPerView: 4,
-//       spaceBetween: 40
-//     }
-//   }
-// })
+// Новости слайдер
+
+let newsm_swiper = new Swiper(".newsm__swiper", {});
