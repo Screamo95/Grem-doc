@@ -638,6 +638,72 @@
       </div>
     </div>
   </section>
+
+  <!-- Свяжитесь с нашим специалистом -->
+  <section class="contact">
+    <div class="contact__conteiner">
+      <div class="contact__content_inner">
+        <div class="contact__content">
+          <h2 class="contact__content-title">Свяжитесь с нашим специалистом</h2>
+          <p class="contact__contwnt-txt">Заинтерисованы в сотрудничестве  или остались вопросы? Заполните форму обратной связи и наши менеджеры обязательно свяжутся с вами</p>
+          <div class="contact__items">
+            <div class="contact__item">
+              <img src="img/contact-icon.svg" alt="Icon" class="contact__item-icon">
+              <p class="contact__item-name">Ответим втечение 15 минут, в рабочее время</p>
+            </div>
+            <div class="contact__item">
+              <img src="img/contact-icon.svg" alt="Icon" class="contact__item-icon">
+              <p class="contact__item-name">Бережем ваши персональные данные</p>
+            </div>
+            <h5 class="contact__number">+7 (342) 250-08-88</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form_inner">
+        <div class="contact__form">
+          <form action="#" name="form_main" method="post">
+            <label for="name" class="contact__form-label">Контактное лицо</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Ф.И.О." class="contact__form-inp">
+            <div class="contact__form_mini">
+              <div class="contact__form_mini-inner">
+                <label for="tel" class="contact__form-label">Телефон</label>
+                <br>
+                <input type="tel" name="tel" id="tel" class="contact__form-inp_mini" placeholder="+ 7 999 199 19 19">
+              </div>
+              <div class="contact__form_mini-inner">
+                <label for="email" class="contact__form-label">Email</label>
+                <br>
+                <input type="email" name="email" id="email" class="contact__form-inp_mini" placeholder="info@mail.ru">
+              </div>
+            </div>
+            <label for="quest" class="contact__form-label">Причина обращения</label>
+            <br>
+            <select name="quest" id="quest" class="contact__form-inp contact__form-select">
+              <option value="1" selected="selected">Выберите из списка</option>
+              <option value="2">Вариант 2</option>
+              <option value="3">Вариант 3</option>
+              <option value="4">Вариант 4</option>
+            </select>
+            <br>
+            <label for="comment" class="contact__form-label">Комментарий</label>
+            <br>
+            <textarea name="comment" id="comment" placeholder="Напишите суть вашего вопроса" class="contact__form-area"></textarea>
+            <br>
+            <div class="contact__form_check-inner">
+              <label for="" class="contact__form-checkbox_cost">
+                <input type="checkbox" name="conf" id="conf" class="contact__form-check">
+                <span></span>
+              </label>
+              <label for="conf" class="contact__form-label contact__form-label_check">Нажимая кнопку я соглашаюсь с политикой конфиденциальности</label>
+            </div>
+            <input type="button" value="Связаться с нами" class="contact__form-btn">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
