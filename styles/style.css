@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --regular: Stapel-regular;
   --medium: Stapel-medium;
@@ -119,12 +122,15 @@
   width: 179px;
   height: 50px;
   background: #0e9e2f;
+  border: none;
+  cursor: pointer;
+}
+.header__bottom-btn a {
   font-family: var(--medium);
   font-size: 14px;
   text-align: center;
   color: #fff;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
 }
 .header__bottom-whatsapp {
   margin-top: 13px;

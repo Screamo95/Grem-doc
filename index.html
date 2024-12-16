@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.min.css">
   <title>Grem-Doc</title>
 </head>
 <body>
@@ -20,11 +20,11 @@
       <div class="header__top_left">
         <img src="img/header-logo.png" alt="Logo" class="header__top-logo">
         <div class="header__menu">
-          <a href="#" class="header__menu-link">Продукция</a>
-          <a href="#" class="header__menu-link">Поставщикам</a>
-          <a href="#" class="header__menu-link">Вакансии</a>
-          <a href="#" class="header__menu-link">Новости</a>
-          <a href="#" class="header__menu-link">Контакты</a>
+          <a href="#product" class="header__menu-link">Продукция</a>
+          <a href="#map" class="header__menu-link">Поставщикам</a>
+          <a href="#vacancy" class="header__menu-link">Вакансии</a>
+          <a href="#news" class="header__menu-link">Новости</a>
+          <a href="#contact" class="header__menu-link">Контакты</a>
         </div>
       </div>
 
@@ -62,19 +62,19 @@
     <div class="burger__menu">
       <div class="burger__menu-inner">
         <ul class="burger__nav">
-          <a href="#" class="burger__nav-link">
+          <a href="#product" class="burger__nav-link">
             <li class="burger__nav-link">Продукция</li>
           </a>
-          <a href="#" class="burger__nav-link">
+          <a href="#map" class="burger__nav-link">
             <li class="burger__nav-link">Поставщикам</li>
           </a>
-          <a href="#" class="burger__nav-link">
+          <a href="#vacancy" class="burger__nav-link">
             <li class="burger__nav-link">Вакансии</li>
           </a>
-          <a href="#" class="burger__nav-link">
+          <a href="#newsm" class="burger__nav-link">
             <li class="burger__nav-link">Новости</li>
           </a>
-          <a href="#" class="burger__nav-link">
+          <a href="#contact" class="burger__nav-link">
             <li class="burger__nav-link">Контакты</li>
           </a>
         </ul>
@@ -94,8 +94,10 @@
     </div>
 
     <div class="header__bottom">
-      <button class="header__bottom-btn">Связаться с нами</button>
-      <a class="header__bottom-whatsapp" href="#">
+      <button class="header__bottom-btn">
+        <a href="#contact">Связаться с нами</a>
+      </button>
+      <a class="header__bottom-whatsapp" href="https://wa.me/73422500888">
         <img src="img/header-whatsapp.svg" alt="WhatsApp">
       </a>
     </div>
@@ -103,7 +105,7 @@
   </header>
 
   <!-- Продукция завода -->
-  <section class="product">
+  <section class="product" id="product">
     <div class="product__container">
 
       <img src="img/product-absolut.svg" class="product-absolut">
@@ -311,7 +313,7 @@
   </section>
 
   <!-- Основная деятельность -->
-  <section class="job">
+  <section class="job" id="job">
 
     <!-- PC version -->
     <div class="job__container">
@@ -406,7 +408,7 @@
   </section>
 
   <!-- Стабильные поставки за счет собственной лесозаготовки -->
-  <section class="delivery">
+  <section class="delivery" id="delivery">
     <div class="delivery__box">
 
       <!-- Left -->
@@ -439,7 +441,7 @@
   </section>
 
   <!-- География поставок -->
-  <section class="map">
+  <section class="map" id="map">
     <div class="map__container">
       <div class="map__top">
         <h2 class="map__top-title">География поставок</h2>
@@ -479,7 +481,7 @@
   </section>
 
   <!-- Актуальные вакансии -->
-  <section class="vacancy">
+  <section class="vacancy" id="vacancy">
     <div class="vacancy__container">
       <div class="vacancy__line-mobile"></div>
       <div class="vacancy__swiper swiper">
@@ -573,7 +575,7 @@
   <!-- Новости -->
   
   <!-- PC version -->
-  <section class="news">
+  <section class="news" id="news">
     <div class="news__container">
       <div class="news__top">
         <h2 class="news__top-title">Новости</h2>
@@ -609,7 +611,7 @@
   </section>
 
   <!-- Mobile version -->
-  <section class="newsm">
+  <section class="newsm" id="newsm">
     <div class="newsm__banner">
       <h2 class="newsm__banner-title">Новости</h2>
       <button class="newsm__banner-btn">Читать все новости</button>
@@ -640,7 +642,7 @@
   </section>
 
   <!-- Свяжитесь с нашим специалистом -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact__conteiner">
       <div class="contact__content_inner">
         <div class="contact__content">
@@ -735,12 +737,12 @@
           <div class="footer__column footer__column_2">
             <h4 class="footer__column-title">О компании</h4>
             <div class="footer__column_menu">
-              <a href="#" class="footer__column_menu-link">Продукция</a>
-              <a href="#" class="footer__column_menu-link">Деятельность</a>
-              <a href="#" class="footer__column_menu-link">Приемущества</a>
-              <a href="#" class="footer__column_menu-link">Поставщикам</a>
-              <a href="#" class="footer__column_menu-link">Вакансии</a>
-              <a href="#" class="footer__column_menu-link">Новости</a>
+              <a href="#product" class="footer__column_menu-link">Продукция</a>
+              <a href="#job" class="footer__column_menu-link">Деятельность</a>
+              <a href="#delivery" class="footer__column_menu-link">Приемущества</a>
+              <a href="#map" class="footer__column_menu-link">Поставщикам</a>
+              <a href="#vacancy" class="footer__column_menu-link">Вакансии</a>
+              <a href="#news" class="footer__column_menu-link">Новости</a>
             </div>
           </div>
         </div>  
@@ -751,15 +753,15 @@
             <div class="footer__column">
               <h4 class="footer__column-title">Отдел закупок</h4>
               <div class="footer__column_menu">
-                <a href="#" class="footer__column_menu-link">purchase@grdok.ru</a>
+                <a href="mailto:purchase@grdok.ru" class="footer__column_menu-link">purchase@grdok.ru</a>
               </div>
             </div>
             <div class="footer__column">
               <h4 class="footer__column-title">Отдел продаж</h4>
               <div class="footer__column_menu">
-                <a href="#" class="footer__column_menu-link">sale@grdok.ru</a>
-                <a href="#" class="footer__column_menu-link">@gremdok_bot</a>
-                <a href="#" class="footer__column_menu-link footer__column_menu-link_big">Мелкий опт, «карандаши», «пятаки» : +7 (342) 502-16-91</a>
+                <a href="mailto:sale@grdok.ru" class="footer__column_menu-link">sale@grdok.ru</a>
+                <a href="tg://resolve?domain=gremdok_bot" class="footer__column_menu-link">@gremdok_bot</a>
+                <a href="tel:+73425021691" class="footer__column_menu-link footer__column_menu-link_big">Мелкий опт, «карандаши», «пятаки» : +7 (342) 502-16-91</a>
               </div>
             </div>
           </div>
@@ -769,13 +771,13 @@
             <div class="footer__column">
               <h4 class="footer__column-title">Контакты</h4>
               <div class="footer__column_menu">
-                <a href="#" class="footer__column_menu-link">info@grdok.ru</a>
+                <a href="mailto:info@grdok.ru" class="footer__column_menu-link">info@grdok.ru</a>
               </div>
             </div>
             <div class="footer__column">
               <h4 class="footer__column-title">Адрес</h4>
               <div class="footer__column_menu">
-                <p class="footer__column_menu-link footer__column_menu-link_big">Гремячинск Пермский край 618270 РФ, г. Гремячинск, ул. Коммунистическая, д.1</p>
+                <a href="https://yandex.ru/maps/-/CHE04G0b" target="_blank" class="footer__column_menu-link footer__column_menu-link_big">Гремячинск Пермский край 618270 РФ, г. Гремячинск, ул. Коммунистическая, д.1</a>
               </div>
             </div>
           </div>
